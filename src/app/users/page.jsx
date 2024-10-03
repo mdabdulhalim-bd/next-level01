@@ -9,8 +9,8 @@ const UsersPage = async() => {
         <div>
             <h1 className="text-2xl text-center">This is user page ?</h1>
             {
-                users?.map(({id, email, address,name}) =>(<div>
-                    <h2 key={id}>{name}</h2>
+                users?.map(({id, email, address,name}) =>(<div key={id}>
+                    <h2>{name}</h2>
                     <p>{email}</p>
                     <p>{address?.city}</p>
                 </div>))

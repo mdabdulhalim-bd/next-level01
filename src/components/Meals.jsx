@@ -34,7 +34,7 @@ const Meals = () => {
 
   useEffect(() => {
     loadData();
-  }, [search]);
+  },[search]);
 
   // if(meals?.length === 0){
   //   return <h1>No Meals Found...</h1>
